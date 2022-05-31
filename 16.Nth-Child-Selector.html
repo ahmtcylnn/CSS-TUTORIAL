@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nth-Child-Selector</title>
+    <style>
+        ul{
+            font-size: 1.5em;
+            list-style-type: none;
+        }
+        /*n=0 b=0, 0,2,4,6,8,10*/
+        ul li:nth-child(2n){
+            color: red;
+        }
+        ul li:nth-child(2n+1){
+            color: chartreuse;
+        }
+        ul li:nth-child(n+4){
+            background-color: burlywood;
+        }
+        p{
+            font-size: 1.5em;
+
+        }
+        p:first-child{
+            background-color: bisque;
+        }
+        p:last-child{
+            background-color: orange;
+        }
+        p:nth-child(1){
+            color: blue;
+        }
+        p:nth-child(3){
+            color: red;
+        }
+
+        p:nth-child(even){
+            color: aqua;
+        }
+        p:nth-child(odd){
+            color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+        <li>Element</li>
+
+    </ul> 
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, maxime.
+
+    </p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, voluptate!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, libero.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, veniam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, eos.</p>
+
+</body>
+
+</html>
